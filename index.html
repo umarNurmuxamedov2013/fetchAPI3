@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playpen+Sans:wght@100..800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(92deg , blue, blueviolet, violet);
+            width: 100vh;
+            height: 10vh;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            margin-left: 50vh;
+            margin-right: 50vh;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            font-family: Playpen Sans;
+            cursor: none;
+        }
+
+        .card {
+            border: 5px solid blue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .btnWrapper {
+            display: flex;
+            /* justify-content: center; */
+            width: 100%;
+            margin-left: 50%;
+            margin-top: 10vh;
+        }
+
+        .btnCreater {
+            width: 440px;
+            height: 50px;
+            border-radius: 15px;
+            background-color: rgb(9, 255, 0);
+            cursor: pointer;
+            border: none;
+            color: white;
+            font-size: 30px;
+            font-family: Playpen Sans;
+        }
+        .btnCreater:hover{
+            width: 440px;
+            height: 50px;
+            background: transparent;
+            border: 5px solid rgb(9, 255, 0);
+        
+            font-size: 30px;
+            color: rgb(9, 255, 0);
+            cursor: help;
+            text-align: center;
+
+            font-family: Playpen Sans;
+        }
+
+        .btnCreater:active{
+            width: 440px;
+            height: 50px;
+            background: transparent;
+            border: 5px solid rgb(9, 255, 0);
+            font-size: 30px;
+            color: rgb(9, 255, 0);
+            cursor: wait;
+            text-align: center;
+
+            font-family: Playpen Sans;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">
+            <h2>Name: <span class="name" id="name">umar</span></h2>
+            <h2>Last: <span class="lastN" id="lastN"></span>nurmuxmaedov</h2>
+            <h2>Email: <span class="email" id="email"></span>@gmail.com</h2>
+            <h2>Company: <span class="company" id="company">Mars IT School</span></h2>
+        </div>
+    </div>
+    <div class="btnWrapper">
+        <button class="btnCreater" id="btnCreater">Create user</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
